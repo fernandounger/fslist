@@ -1,0 +1,31 @@
+<div class="container__list">
+  <img src="../../../assets/img/logofslist.png" alt="">
+
+  <div class="list__products">
+    <div class="product" *ngFor="let product of todoList; let indexProduct = index;">
+      <div class="product__content--name">
+        <div class="name">
+          <span>Nome</span>
+          <h3>{{product.nome}}</h3>
+        </div>
+      </div>
+      <div class="product__content--amount">
+        <div class="amount">
+          <span>Quantidade</span>
+          <h4>{{product.quantidade}}</h4>
+        </div>
+      </div>
+      <div class="icons__list">
+        <div>
+          <button class="edit" (click)="updateItem(indexProduct)">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <button class="trash" (click)="removeItem(indexProduct)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button routerLink="/todo/create">ADICIONAR ITEM</button>
+</div>

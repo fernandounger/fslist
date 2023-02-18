@@ -1,0 +1,79 @@
+.container__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.container__list img{
+  user-select: none;
+  width: 180px;
+}
+.container__list .list__products{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 4px;
+  width: 320px;
+}
+.container__list .product{
+  color: #1d1c1c;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  background-color: #efeded;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border: 8px;
+}
+.product .product__content--name .name, .product .product__content--amount .amount{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product .product__content--name .name span, .product .product__content--amount .amount span{
+  text-transform: uppercase;
+  color: #1d1d1d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+
+}
+.container__list .product div{
+  display: flex;
+  gap: 0.4rem;
+
+}
+.container__list .product div .edit, .container__list .product div .trash {
+  background-color: transparent;
+}
+.container__list .product div .edit i{
+  color: #FF781F;
+  font-size: 1.2rem;
+}
+.container__list .product div .trash i{
+  color: #c71e1e;
+  font-size: 1.2rem;
+}
+.container__list .product div .edit , .container__list .product div .trash{
+  padding: 8px;
+  border-radius: 4px;
+  color: #FFFF;
+  cursor: pointer;
+}
+.container__list button{
+  padding: 14px;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  color: #FFF;
+  background-color: #660092;
+  transition: filter .2s;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+.container__list button:hover{
+  filter: brightness(1.2);
+}
