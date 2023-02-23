@@ -1,1 +1,1 @@
-<img src="https://media.discordapp.net/attachments/1055429845233967174/1076723491363111012/bannerfs.jpg?width=803&height=321" style="width: 100%">
+<img src="https://media.discordapp.net/attachments/938167882154639453/1078304642510897222/bannerfs.jpg?width=768&height=307" style="width: 100%">
